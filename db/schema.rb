@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150320190014) do
   end
 
   create_table "votes", force: :cascade do |t|
-    t.integer  "topic_id"
+    t.integer  "person_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
