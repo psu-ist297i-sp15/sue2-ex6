@@ -5,12 +5,18 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
+
+# Adding these for bootstrap support on 4/3 - NF
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
 group :development, :test do
 	gem 'sqlite3'
 end
 
 group :production do
-	gem 'pg'
+	# This gem for Heroku
+    #gem 'pg'
 	gem 'rails_12factor'
 end
 # Use SCSS for stylesheets
@@ -52,6 +58,7 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '~> 1.3.3'
 
-  gem 'bootstrap-sass'
+  # This was here... not sure if it was autogenned or what
+  # gem 'bootstrap-sass'
 end
 
